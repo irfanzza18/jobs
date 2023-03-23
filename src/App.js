@@ -5,6 +5,7 @@ import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
 import "./firebase";
 import {getAuth,onAuthStateChanged} from  "firebase/auth"
+import Detail from './pages/Detail';
 
 function App() {
         //pengecekan auth
@@ -47,6 +48,7 @@ function App() {
         <Routes>
          <Route path='/dashboard' element={<Dashboard/>} />
          <Route path='*' element={<Dashboard/>} />
+         <Route path='/detail/:id' element={<Detail/>} />
        </Routes>
 
       ) : (
