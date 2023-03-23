@@ -188,7 +188,7 @@ function Job() {
                     <Form.Check  name="full_time"  label="Full Time Only " type="checkbox" className="mb-2" 
                      onChange={(e)=> handle(e)}
                      id="full_time"
-                     value = {data.full_time}
+                     value="Full Time"
                     />
                   </Form.Group>
                   <Form.Group as={Col}>
